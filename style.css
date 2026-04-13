@@ -1,45 +1,71 @@
 <style>
-  body {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 50px;
-  }
+      body {
+        margin: 0;
+        background: #0a0a0a;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
 
-  .high {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ff2e2e;
-    margin-bottom: 10px;
-  }
+      /* NAVBAR */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0;
+        backdrop-filter: blur(10px);
+        background: rgba(20, 20, 20, 0.5);
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        z-index: 1000;
+      }
 
-  .low {
-    font-size: 24px;
-    color: #cccccc;
-    margin: 5px 0;
-  }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s;
+      }
 
-  .desc {
-    font-size: 16px;
-    color: #888888;
-    margin: 20px auto;
-    max-width: 500px;
-    line-height: 1.5;
-  }
+      .navbar a:hover {
+        color: #ff2e2e;
+      }
 
-  .shop {
-    background-color: #ff2e2e;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
+      /* PAGE CONTENT */
+      .content {
+        text-align: center;
+        margin-top: 120px;
+        padding: 20px;
+      }
 
-  .shop:hover {
-    background-color: #cc0000;
-  }
-</style>
+      .high {
+        font-size: 36px;
+        color: #ff2e2e;
+      }
+
+      .low {
+        font-size: 24px;
+        color: #ccc;
+      }
+
+      .desc {
+        font-size: 16px;
+        color: #888;
+        max-width: 500px;
+        margin: 20px auto;
+      }
+
+      .shop {
+        background: #ff2e2e;
+        border: none;
+        padding: 12px 25px;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .shop:hover {
+        background: #cc0000;
+      }
+    </style>
